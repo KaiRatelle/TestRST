@@ -8,11 +8,18 @@ oligarchy = False
 tom_crews = False
 pasini = False
 def start_game():
-    start = input("Launch the game? [Y/N] ")
+    print("You are an archaeologist, mainly focusing on Ancient Egypt. Living in Cairo for many years, doing very exciting, yet risky work. Exploring Pyramids that have remained untouched, having to avoid boobytraps while in uncharted, ancient territory.")
+    print("This has gotten you quite the international reputation, at least in the archaeology and history circles. Because of this recognition, you were handed a very important opportunity.")
+    print("The phone rings... disaster has struck. Sudan, which has been under a military dictatoriship since 2019 has just fallen into multi-front civil war.")
+    print("Both sides are dangerous, but the Rapid Support Forces, RSF, are especially destructive. They are the paramilitary that started the civil war, and will stop at nothing to takeover the country.")
+    print("This conflict will be bloody and brutal, mass devastation is expected, including of the 255 Nubian Pyramids throughout the country.")
+    print("Although not an expert in Nubian history, the danger of this situation and your daring past make you the UN's candidate to travel into Sudan and save as many artifacts as possible.")
+    print("The only question is, will you accept this request?")
+    start = input("Yes [Y] or No [N] | ")
     if start == "Y" or start == "y":
         game()
     if start == "N" or start == "n":
-        print(":(")
+        print("\nUnfortunatley, no one else accepted the opportunity either. Whatever is, was, inside many of those pyramids is now lost to history...")
 
 def restart():
     again = input("Do you want to play again? [Y/N] ")
@@ -30,6 +37,7 @@ def choice1():
     global oligarchy
     global tom_crews
     global pasini
+    
     choice1 = input("Wealth [A] or Fame [B]? ")
 
     if choice1 == "A" or choice1 == "a":
