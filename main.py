@@ -37,8 +37,10 @@ def choice1():
     global oligarchy
     global tom_crews
     global pasini
-    
-    choice1 = input("Wealth [A] or Fame [B]? ")
+
+    print("\nIt is now November 9th, 2026, the RSF is advancing forward at a rapid pace, there are two pyramids that will be taken over, most likely by the 12th.")
+    print("Only one of the pyramids can be explored before they are both taken over, you must choose which location.")
+    choice1 = input("Meroë [A] or El-Kurru [B]? ")
 
     if choice1 == "A" or choice1 == "a":
         wealth()
