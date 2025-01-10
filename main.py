@@ -69,6 +69,9 @@ def choice1():
         wealth()
     if choice1 == "B" or choice1 == "b":
         fame()
+    else:
+        print("You tried going somewhere else entirely, which was not a great idea considering you were in the desert\nLuckily, a pack of hyenas took you in as one of their own :)")
+        restart()
 
 def wealth():
     global endings 
@@ -107,6 +110,9 @@ def wealth():
             mafia = True
             print("Congratulations, you got the 'Mafia' ending! You now have " + str(endings) + "/8")
             restart()
+        else:
+            print("You purchased a " + mansion + ", which is definitly not one of your options. The CRA decided they had enough and took all your money.")
+            restart()
 
     ############## Stocks ##############
     elif wealth == "B" or wealth == "b":
@@ -127,6 +133,12 @@ def wealth():
             corny = True
             print("Congratulations, you got the 'Corny' ending! You now have " + str(endings) + "/8")
             restart()
+        else:
+            print("You bought stocks in " + stock + ", which failed miserably, you are now bankrupt.")
+            restart()
+    else:
+        print("'What in the world man, that wasn't one of the options, if you want to buy" + wealth + " then go ahead, I quit.'")
+        restart()
 
 def fame():
     global endings 
@@ -177,6 +189,9 @@ def fame():
             oligarchy = True
             print("Congratulations, you got the 'Oligarchy' ending! You now have " + str(endings) + "/8")
             restart()
+        else:
+            print("Your leadership of the party is so bad, your 73% projection went down to 26%" + " until your party completely collapsed. \nYou had to retire in disgrace, a footnote in Canadian history.")
+            restart()
 
     ############## Politician ##############
     elif fame == "B" or fame == "b":
@@ -203,7 +218,12 @@ def fame():
             pasini = True
             print("Congratulations, you got the 'Pasini' ending! You now have " + str(endings) + "/8")
             restart()
-
+        else:
+            print("Instead of signing the contract, you write '" + actor + "' where your name should be.")
+            restart()
+    else:
+        print("'no'\nSuddenly you sucked back out of the portal into the pyramid, but you can't find the exit. The paths inside are seemingly infinite and ever changing.\nYou are lost forever.")
+        restart()
 def game():
     global endings 
     print("Endings achieved: " + str(endings) + "/8")  
