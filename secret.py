@@ -97,7 +97,7 @@ def wealth():
             if pirate == False:
                 endings+=1
             pirate = True
-            print("Congratulations, you got the 'Pirate' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + DARK_GRAY + "'Pirate'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         if mansion == "B" or mansion == "b":
             print("\nYou move to Nunavut, but the mansion you purchased is absolutely frigid. \nIn fact, a family of polar bears have moved in with you.")
@@ -106,7 +106,7 @@ def wealth():
             if mafia == False:
                 endings+=1
             mafia = True
-            print("Congratulations, you got the 'Mafia' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + BRIGHT_CYAN + "'Climactic'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         else:
             print("You purchased a " + mansion + ", which is definitly not one of your options. The CRA decided they had enough and took all your money.")
@@ -114,7 +114,7 @@ def wealth():
 
     ############## Stocks ##############
     elif wealth == "B" or wealth == "b":
-        print("'\nI knew you would come around eventually! I have been in contact with Mr. Mosk, I really think SpaceX is your best bet")
+        print("\n'I knew you would come around eventually! I have been in contact with Mr. Mosk, I really think SpaceX is your best bet")
         print("of course, its up to you though'\n")
         stock = input("Which stocks will you purchase, SpaceX [A] or corn [B]? ")    
         if stock == "A" or stock == "a":
@@ -122,14 +122,14 @@ def wealth():
             if major_tom == False:
                 endings+=1
             major_tom = True
-            print("Congratulations, you got the 'Major Tom' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + BLUE + "'Major Tom'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         if stock == "B" or stock == "b":
             print("\nDespite confusing 'stocks' with 'stalks', your investment turned out quite well. \nAfter a plant disease wiped out most corn in the world, your massive stockpile become worth a fortune. \nYou are now the 86th richest person alive.")
             if corny == False:
                 endings+=1
             corny = True
-            print("Congratulations, you got the 'Corny' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + BRIGHT_YELLOW + "'Corny'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         else:
             print("You bought stocks in " + stock + ", which failed miserably, you are now bankrupt.")
@@ -176,7 +176,7 @@ def fame():
             if assasination == False:
                 endings+=1
             assasination = True
-            print("\nCongratulations, you got the 'Assasination' ending! You now have " + str(endings) + "/8")
+            print("\nCongratulations, you got the " + RED + "'Assasination'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         if politician == "B" or politician == "b":
             print("\nYou take bribes and build many connections. The media fully supports your campaign, \nswaying public opinion even more to your favour, enough to win the election essentially uncontested.") 
@@ -185,7 +185,7 @@ def fame():
             if oligarchy == False:
                 endings+=1
             oligarchy = True
-            print("Congratulations, you got the 'Oligarchy' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + GREEN + "'Oligarchy'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         else:
             print("Your leadership of the party is so bad, your 73% projection went down to 26%" + " until your party completely collapsed. \nYou had to retire in disgrace, a footnote in Canadian history.")
@@ -207,14 +207,14 @@ def fame():
             if tom_crews == False:
                 endings+=1
             tom_crews = True
-            print("Congratulations, you got the 'Tom Crews' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + BRIGHT_BLUE + "'Tom Crews'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         if actor == "B" or actor == "b":
             print("\nYou star in local shows, some made for TV programs, but find a passion for teaching. \nYou manage to get a job working at All Saints Catholic High School teaching drama. While working you begin writing your own plays for school, but never get to use them before you retire. \n200 years later the documents are found and you become the new Shakespeare.")
             if pasini == False:
                 endings+=1
             pasini = True
-            print("Congratulations, you got the 'Pasini' ending! You now have " + str(endings) + "/8")
+            print("Congratulations, you got the " + BRIGHT_MAGENTA + "'Pasini'" + RESET + " ending! You now have " + str(endings) + "/8")
             restart()
         else:
             print("Instead of signing the contract, you write '" + actor + "' where your name should be.")
@@ -235,21 +235,21 @@ def game():
     global tom_crews
     global pasini
     if pirate == True:
-        print("Pirate")
+        print(DARK_GRAY + "Pirate" + RESET)
     if mafia == True:
-        print("Mafia")
+        print(BRIGHT_CYAN + "Climactic" + RESET)
     if major_tom == True:
-        print("Major Tom")
+        print(BLUE + "Major Tom" + RESET)
     if corny == True:
-        print("Corny")
+        print(BRIGHT_YELLOW + "Corny" + RESET)
     if assasination == True:
-        print("Assasination")
+        print(RED + "Assasination" + RESET)
     if oligarchy == True:
-        print("Oligarchy")
+        print(GREEN + "Oligarchy" + RESET)
     if tom_crews == True:
-        print("Tom Crews")
+        print(BRIGHT_BLUE + "Tom Crews" + RESET)
     if pasini == True:
-        print("Pasini")
+        print(BRIGHT_MAGENTA + "Pasini" + RESET)
     choice1()
     
 start_game()
